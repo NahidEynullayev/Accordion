@@ -1,0 +1,16 @@
+@use "../assets/global" as *;
+@use "../assets/mixin";
+
+.Page {
+  width: 1440px;
+  min-height: 2183px;
+  //   border: 1px solid red;
+  @include mixin.flex($align: flex-start);
+  padding-top: 120px;
+
+  .Back {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+  }
+}

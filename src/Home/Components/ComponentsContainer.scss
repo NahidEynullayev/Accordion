@@ -1,0 +1,10 @@
+@use "../../assets/global";
+@use "../../assets/mixin";
+.Container {
+  width: 1170px;
+  min-height: 763px;
+  //   border: 1px solid blue;
+  box-sizing: content-box;
+  @include mixin.flex($direction: column);
+  gap: 50px;
+}

@@ -1,0 +1,62 @@
+@use "../../../../assets/global";
+@use "../../../../assets/mixin";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.Fig {
+  width: 770px;
+  height: 88px;
+  background-color: #fff;
+  //   border: 1px solid red;
+  @include mixin.flex($justify: space-between);
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 30px;
+  p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Inter", sans-serif;
+  }
+  button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+}
+
+.ResFig {
+  width: 770px;
+  height: 220px;
+  // border: 1px solid red;
+  border-top: 1px solid gray;
+  @include mixin.flex(
+    $direction: column,
+    $justify: space-evenly,
+    $align: flex-start
+  );
+  background-color: #fff;
+
+  padding-left: 17px;
+  p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  button {
+    width: 134px;
+    height: 42px;
+    background-color: #ff8a00;
+    border-radius: 3px;
+    box-shadow: none;
+    border: none;
+
+    cursor: pointer;
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+}

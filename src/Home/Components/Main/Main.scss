@@ -1,0 +1,8 @@
+@use "../../../assets/mixin";
+ul {
+  list-style: none;
+  width: 770px;
+  min-height: 560px;
+  @include mixin.flex($direction: column);
+  box-sizing: content-box;
+}
